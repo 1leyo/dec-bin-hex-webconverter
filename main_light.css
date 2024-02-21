@@ -6,7 +6,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: black;
-    background-image: url(imgs/darkmode_bg.jpg);
+    background-image: url(imgs/lightmode_bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -110,7 +110,7 @@ input::-webkit-inner-spin-button {
     width: 40%;
     display: inline;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
     color: white;
     border: 2px solid white;
     border-radius: 12px;
