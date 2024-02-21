@@ -24,7 +24,7 @@ function calcWhenBinInput()
 {
     let input = document.getElementById('bin').value
     let dec = parseInt(input, 2)
-    let hex = parseInt(input, 2).toString(16).toUpperCase();
+    let hex = parseInt(input, 2).toString(16).toUpperCase()
 
     document.getElementById('dec').value = dec
     document.getElementById('hex').value = hex
