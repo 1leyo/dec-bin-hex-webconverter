@@ -1,32 +1,15 @@
-body, html {
-    height: 100%;
-}
+
 
 body {
-    margin: 0px;
-    padding: 0px;
-    background-color: black;
     background-image: url(imgs/darkmode_bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
     font-family: "Roboto", sans-serif;
 }
   
-* {
-    box-sizing: border-box;
-}
+
 
 .container {
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding-inline: 30px;
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
     border-radius: 25px;
@@ -57,17 +40,11 @@ body {
 }
 
 .inputfield {
-    margin-top: 5%;
-    padding: 12px;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 8px;
 }
 
 .inputfield input {
-    width: 100%;
-    padding: 6px 20px;
-    margin: 0;
-    box-sizing: border-box;
     border: none;
     border-bottom: 2px solid white;
     background-color: rgba(255, 255, 255, 0);
@@ -82,12 +59,6 @@ body {
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-.twobuttons {
-    width: 100%;
-    padding: 15px;
-    margin: auto;
-    justify-content: center;
-}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -96,10 +67,6 @@ input::-webkit-inner-spin-button {
 }
 
 .bg-image{
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
 }
