@@ -3,6 +3,6 @@ This is a simple website to convert numbers into different numbersystems. It is 
 Known issues:
 - inputs must be cleared to calculate a new number
 
-Planed features:
+Planned features:
 - live calculation
 - theme selector
