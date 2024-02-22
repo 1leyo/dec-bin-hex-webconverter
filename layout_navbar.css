@@ -9,6 +9,7 @@
 
 .topnav .item {
     float: left;
+    height: 100%;
 }
 
 .dropdown {
