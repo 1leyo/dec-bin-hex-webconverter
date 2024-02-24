@@ -1,0 +1,120 @@
+:root {
+    --green: rgb(111, 255, 0);
+}
+
+body {
+    background-color: black;
+    font-family: "Cutive Mono", monospace;
+}
+
+.container {
+    width: 35%;
+    background-color: black;
+    border: 2px solid var(--green)
+}
+
+.container p {
+    color: var(--green)
+}
+
+.heading1 {
+    font-size: 20pt;
+    font-weight: bold;
+    text-transform:uppercase;
+    padding: 0;
+    cursor: default;
+}
+
+.heading2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 5px;
+    margin-bottom: 2px;
+    cursor: default;
+}
+
+.inputfield {
+    background-color: black;
+    border: 1px solid var(--green)
+}
+
+.inputfield input {
+    border: none;
+    border-bottom: 2px solid var(--green);
+    background-color: black;
+    color: var(--green);
+    font-family: "Cutive Mono", monospace;
+    font-size: 12pt;
+}
+
+.inputfield input:hover{
+    background-color: rgb(48, 48, 48);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button1 {
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    display: inline;
+    text-align: center;
+    background-color: black;
+    color: var(--green);
+    border: 1px solid var(--green);
+    font-size: 12pt;
+    font-family: "Cutive Mono", monospace;
+    cursor:crosshair;
+}
+
+.button1:hover {
+    background-color: var(--green);
+    color: black;
+}
+
+.topnav {
+    padding: 0;
+    margin: 0;
+}
+
+.topnav button {
+    padding: 5px;
+    margin: 10px;
+    width: 80px;
+    display: inline;
+    text-align: center;
+    background-color: black;
+    color: var(--green);
+    border: 1px solid var(--green);
+    font-size: 12pt;
+    font-family: "Cutive Mono", monospace;
+    cursor:crosshair;
+}
+
+.topnav button:hover {
+    background-color: var(--green);
+    color: black;
+}
+
+.dropdown-content {
+    background-color: black;
+    border: 1px solid var(--green);
+    margin-left: 10px;
+}
+
+.dropdown-content a {
+    color: var(--green);
+    padding: 10px 10px;
+    font-size: 12pt;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--green);
+    color: black;
+    cursor: crosshair;
+}

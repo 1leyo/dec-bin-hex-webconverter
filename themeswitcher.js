@@ -37,7 +37,7 @@ function setTheme(themeIndex)
             applyTheme('main_light.css')
             break;
         case 3:
-            console.log("wip")
+            applyTheme('neon_theme.css')
             break;
     }
 }
