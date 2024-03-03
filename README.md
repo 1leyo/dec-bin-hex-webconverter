@@ -5,4 +5,3 @@ Known issues:
 
 Planned features:
 - live calculation
-- theme selector
