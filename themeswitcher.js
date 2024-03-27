@@ -1,18 +1,20 @@
+let style = document.getElementById('stylesheet');
+
 function setDarkmode()
 {
-    document.getElementById('stylesheet').href = 'main.css'
+    style.href = 'main.css'
 }
 
 function setLightmode()
 {
-    document.getElementById('stylesheet').href = 'main_light.css'
+    style.href = 'main_light.css'
 }
 
 function switchTheme()
 {
     let darkmode = 'main.css'
     let lightmode = 'main_light.css'
-    let path = document.getElementById('stylesheet').getAttribute('href')
+    let path = style.getAttribute('href')
 
     if(path === darkmode)
     {
@@ -44,5 +46,5 @@ function setTheme(themeIndex)
 
 function applyTheme(themeCSS)
 {
-    document.getElementById('stylesheet').href = themeCSS
+    style.href = themeCSS
 }
