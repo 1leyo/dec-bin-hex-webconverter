@@ -26,7 +26,7 @@ function calcWhenBinInput() {
     let hex = parseInt(input, 2).toString(16).toUpperCase()
 
     document.getElementById('dec').value = dec
-    document.getElementById('hex').value = hex
+    setHexValue(hex)
 }
 
 function calcWhenDecInput() {
@@ -35,7 +35,7 @@ function calcWhenDecInput() {
     let hex = parseInt(input, 10).toString(16).toUpperCase()
 
     document.getElementById('bin').value = bin
-    document.getElementById('hex').value = hex
+    setHexValue(hex)
 }
 
 function calcWhenHexInput() {
@@ -53,6 +53,10 @@ function clearInputs() {
     document.getElementById('hex').value = ''
 }
 
-function setHexValue(str) {
-    
+function setHexValue(hex) {
+    if(!(hex === "NAN")) {
+        document.getElementById('hex').value = hex
+    } else {
+        document.getElementById('hex').value = ''
+    }
 }
