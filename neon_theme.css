@@ -48,8 +48,17 @@ body {
     font-size: 12pt;
 }
 
-.inputfield input:hover{
+.inputfield input:hover {
     background-color: rgb(48, 48, 48);
+}
+
+.inputfield input:focus {
+    outline: none;
+    border: 4px solid var(--green);
+    padding: 15px;
+    background-color: var(--green);
+    color: black;
+    font-weight: bolder;
 }
 
 input::-webkit-outer-spin-button,
@@ -75,6 +84,11 @@ input::-webkit-inner-spin-button {
 .button1:hover {
     background-color: var(--green);
     color: black;
+}
+
+.button1:active {
+    position: relative;
+    top: 3px;
 }
 
 .topnav {
