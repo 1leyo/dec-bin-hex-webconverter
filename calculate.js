@@ -40,7 +40,7 @@ function calcWhenHexInput() {
     let bin = parseInt(dec, 10).toString(2)
 
     document.getElementById('dec').value = dec
-    document.getElementById('bin').value = bin 
+    document.getElementById('bin').value = bin
 }
 
 function clearInputs() {
@@ -54,5 +54,21 @@ function setHexValue(hex) {
         document.getElementById('hex').value = hex
     } else {
         document.getElementById('hex').value = ''
+    }
+}
+
+function filterHex(event) {
+    const key = event.key
+    const validCharacters = "abcdefABCDEF0123456789"
+    if(!validCharacters.includes(key)) {
+        event.preventDefault()
+    }
+}
+
+function filterBin(event) {
+    const key = event.key
+    const validCharacters = "10"
+    if(!validCharacters.includes(key)) {
+        event.preventDefault()
     }
 }

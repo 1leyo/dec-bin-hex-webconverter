@@ -42,12 +42,12 @@
 
         <div class="inputfield">
             <p class="heading2">binary</p>
-            <input type="number" id="bin" oninput="calcWhenBinInput()"/>
+            <input type="number" id="bin" oninput="calcWhenBinInput()" onkeypress="filterBin(event)"/>
         </div>
 
         <div class="inputfield">
             <p class="heading2">hex</p>
-            <input type="text" id="hex" oninput="calcWhenHexInput()"/>
+            <input type="text" id="hex" oninput="calcWhenHexInput()" onkeypress="filterHex(event)"/>
         </div>
 
         <div class="twobuttons">
