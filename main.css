@@ -51,8 +51,14 @@ body {
     transition-duration: 0.4s;
 }
 
-.inputfield input:hover{
+.inputfield input:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.inputfield input:focus {
+    outline: none;
     background-color: rgba(255, 255, 255, 0.25);
+    border: 4px solid white;
 }
 
 
