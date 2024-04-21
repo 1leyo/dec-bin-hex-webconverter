@@ -72,3 +72,11 @@ function filterBin(event) {
         event.preventDefault()
     }
 }
+
+function filterDec(event) {
+    const key = event.key
+    const validCharacters = "0123456789"
+    if(!validCharacters.includes(key)) {
+        event.preventDefault()
+    }
+}
