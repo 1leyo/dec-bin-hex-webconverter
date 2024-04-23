@@ -9,6 +9,7 @@ This is also my first project using JS in combination with HTML and CSS.
 
 # Planned Features
 - native backgrounds instead of images
+- responsive layout with better view on mobile devices
 
 # Known Issues
 *There are currently no known issues*
