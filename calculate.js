@@ -60,7 +60,8 @@ function setHexValue(hex) {
 function filterHex(event) {
     const key = event.key
     const validCharacters = "abcdefABCDEF0123456789"
-    if(!validCharacters.includes(key)) {
+    const isNotBackspace = keyIsNotBackSpace(key)
+    if(!validCharacters.includes(key) && isNotBackspace) {
         event.preventDefault()
     }
 }
@@ -68,7 +69,8 @@ function filterHex(event) {
 function filterBin(event) {
     const key = event.key
     const validCharacters = "10"
-    if(!validCharacters.includes(key)) {
+    const isNotBackspace = keyIsNotBackSpace(key)
+    if(!validCharacters.includes(key) && isNotBackspace) {
         event.preventDefault()
     }
 }
@@ -76,7 +78,14 @@ function filterBin(event) {
 function filterDec(event) {
     const key = event.key
     const validCharacters = "0123456789"
-    if(!validCharacters.includes(key)) {
+    const isNotBackspace = keyIsNotBackSpace(key)
+    if(!validCharacters.includes(key) && isNotBackspace) {
         event.preventDefault()
     }
+}
+
+function keyIsNotBackSpace(key) {
+    let result = key === "Backspace"
+
+    return !(result)
 }
