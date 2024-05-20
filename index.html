@@ -31,29 +31,28 @@
             </div>
         </div>
     </div>
+    <main class="container">
+        <header><h1>calculator</h1></header>
 
-    <div class="container">
-        <p class="heading1">calculator</p>
-
-        <div class="inputfield">
-            <p class="heading2">decimal</p>
+        <section class="inputfield">
+            <h2>decimal</h2>
             <input type="number" id="dec" onkeyup="calcWhenDecInput()" onkeydown="filterDec(event)"/>
-        </div>
+        </section>
 
-        <div class="inputfield">
-            <p class="heading2">binary</p>
+        <section class="inputfield">
+            <h2>binary</h2>
             <input type="number" id="bin" onkeyup="calcWhenBinInput()" onkeydown="filterBin(event)"/>
-        </div>
+        </section>
 
-        <div class="inputfield">
-            <p class="heading2">hex</p>
+        <section class="inputfield">
+            <h2>decimal</h2>
             <input type="text" id="hex" onkeyup="calcWhenHexInput()" onkeydown="filterHex(event)"/>
-        </div>
+        </section>
 
-        <div class="twobuttons">
+        <section class="twobuttons">
             <button class="button1" onclick="calculate()">calculate</button>
             <button class="button1" onclick="clearInputs()">clear</button>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 </html>
