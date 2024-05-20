@@ -3,13 +3,13 @@ function calculate() {
     let inputBin = document.getElementById('bin')
     let inputHex = document.getElementById('hex')
 
-    if(inputDec.value == 0 && inputHex.value == 0 && inputBin.value == 0) {
+    if(inputDec.value === 0 && inputHex.value === 0 && inputBin.value === 0) {
         clearInputs()
-    } else if(inputDec.value == 0 && inputHex.value == 0) {
+    } else if(inputDec.value === 0 && inputHex.value === 0) {
         calcWhenBinInput()
-    } else if(inputBin.value == 0 && inputHex.value == 0) {
+    } else if(inputBin.value === 0 && inputHex.value === 0) {
         calcWhenDecInput()
-    } else if(inputBin.value == 0 && inputDec.value == 0) {
+    } else if(inputBin.value === 0 && inputDec.value === 0) {
         calcWhenHexInput()
     } else {
         calcWhenDecInput()
