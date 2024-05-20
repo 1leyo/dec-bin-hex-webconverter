@@ -37,17 +37,17 @@
 
         <div class="inputfield">
             <p class="heading2">decimal</p>
-            <input type="number" id="dec" oninput="calcWhenDecInput()" onkeypress="filterDec(event)"/>
+            <input type="number" id="dec" onkeyup="calcWhenDecInput()" onkeydown="filterDec(event)"/>
         </div>
 
         <div class="inputfield">
             <p class="heading2">binary</p>
-            <input type="number" id="bin" oninput="calcWhenBinInput()" onkeypress="filterBin(event)"/>
+            <input type="number" id="bin" onkeyup="calcWhenBinInput()" onkeydown="filterBin(event)"/>
         </div>
 
         <div class="inputfield">
             <p class="heading2">hex</p>
-            <input type="text" id="hex" oninput="calcWhenHexInput()" onkeypress="filterHex(event)"/>
+            <input type="text" id="hex" onkeyup="calcWhenHexInput()" onkeydown="filterHex(event)"/>
         </div>
 
         <div class="twobuttons">
