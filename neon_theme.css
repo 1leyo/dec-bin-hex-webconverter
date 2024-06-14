@@ -1,125 +1,126 @@
 :root {
-    --green: rgb(111, 255, 0);
+  color-scheme: light dark;
+  --main: light-dark(rgb(111, 255, 0), rgb(255, 0, 0));
+  --background: light-dark(black, black);
 }
 
 * {
-    color: var(--green);
-    padding: 0;
-    margin: 0;
-    cursor: crosshair;
+  color: var(--main);
+  padding: 0;
+  margin: 0;
+  cursor: crosshair;
 }
 
 body {
-    background-color: black;
-    font-family: monospace;
+  background-color: var(--background);
+  font-family: "Roboto Mono", monospace;
 }
 
 .container {
-    min-width: 50%;
-    border: 1px var(--green) solid;
+  min-width: 50%;
+  border: 1px var(--main) solid;
 }
 
 header {
-    padding: 1.5rem;
-    border: 1px solid var(--green);
+  padding: 1.5rem;
+  border: 1px solid var(--main);
 }
 
 .inputfield {
-    padding: 1.5rem;
-    border: 1px solid var(--green);
+  padding: 1.5rem;
+  border: 1px solid var(--main);
 }
 
 .inputfield input {
-    font-family: inherit;
-    border: none;
-    border-bottom: 2px solid var(--green);
-    background-color: rgba(255, 255, 255, 0);
-    color: var(--green);
-    font-size: 20px;
+  font-family: inherit;
+  border: none;
+  border-bottom: 2px solid var(--main);
+  background-color: var(--background);
+  color: var(--main);
+  font-size: 20px;
 }
 
 .inputfield input:hover {
-    background-color: var(--green);
-    color: black;
+  background-color: var(--main);
+  color: var(--background);
 }
 
 .inputfield input:focus {
-    outline: none;
-    background-color: var(--green);
-    color: black;
-    border: 4px solid var(--green);
-    padding: 10px;
+  outline: none;
+  background-color: var(--main);
+  color: var(--background);
+  border: 4px solid var(--main);
+  padding: 10px;
 }
-
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .twobuttons {
-    padding: 1.5rem;
-    border: 1px solid var(--green);
+  padding: 1.5rem;
+  border: 1px solid var(--main);
 }
 
 button.button1 {
-    padding: 0.7rem;
-    font-family: inherit;
-    background-color: black;
-    border: 1px solid var(--green);
+  padding: 0.7rem;
+  font-family: inherit;
+  background-color: var(--background);
+  border: 1px solid var(--main);
 }
 
 button.button1:hover {
-    background-color: var(--green);
-    color: black;
-    transform: translateY(-2px);
+  background-color: var(--main);
+  color: var(--background);
+  transform: translateY(-2px);
 }
 
 button.button1:active {
-    background-color: var(--green);
-    color: black;
-    transform: translateY(4px);
+  background-color: var(--main);
+  color: var(--background);
+  transform: translateY(4px);
 }
 
 .topnav {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .topnav button {
-    padding: 5px;
-    margin: 10px;
-    width: 80px;
-    display: inline;
-    text-align: center;
-    background-color: black;
-    color: var(--green);
-    border: 1px solid var(--green);
-    font-size: 12pt;
-    font-family: "Cutive Mono", monospace;
-    cursor:crosshair;
+  padding: 5px;
+  margin: 10px;
+  width: 80px;
+  display: inline;
+  text-align: center;
+  background-color: var(--background);
+  color: var(--main);
+  border: 1px solid var(--main);
+  font-size: 12pt;
+  font-family: "Cutive Mono", monospace;
+  cursor: crosshair;
 }
 
 .topnav button:hover {
-    background-color: var(--green);
-    color: black;
+  background-color: var(--main);
+  color: var(--background);
 }
 
 .dropdown-content {
-    background-color: black;
-    border: 1px solid var(--green);
-    margin-left: 10px;
+  background-color: var(--background);
+  border: 1px solid var(--main);
+  margin-left: 10px;
 }
 
 .dropdown-content a {
-    color: var(--green);
-    padding: 10px 10px;
-    font-size: 12pt;
+  color: var(--main);
+  padding: 10px 10px;
+  font-size: 12pt;
 }
 
 .dropdown-content a:hover {
-    background-color: var(--green);
-    color: black;
-    cursor: crosshair;
+  background-color: var(--main);
+  color: var(--background);
+  cursor: crosshair;
 }
