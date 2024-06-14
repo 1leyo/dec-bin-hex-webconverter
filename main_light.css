@@ -5,12 +5,12 @@
 }
 
 body {
+    font-family: "Montserrat", sans-serif;
     background-image: url(imgs/lightmode_bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: "Roboto", sans-serif;
 }
-
+  
 .container {
     min-width: 50%;
     background: rgba(255, 255, 255, 0.17);
@@ -30,6 +30,11 @@ header {
     backdrop-filter: blur(2.6px);
     -webkit-backdrop-filter: blur(2.6px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+
+    & h1 {
+        font-weight: 750;
+        font-size: 2rem;
+    }
 }
 
 .inputfield {
@@ -40,6 +45,11 @@ header {
     backdrop-filter: blur(2.6px);
     -webkit-backdrop-filter: blur(2.6px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+
+    & h2 {
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
 }
 
 .inputfield input {
@@ -47,8 +57,10 @@ header {
     border-bottom: 2px solid white;
     background-color: rgba(255, 255, 255, 0);
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight:normal;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     font-size: 20px;
     transition-duration: 0.4s;
 }
@@ -68,8 +80,8 @@ header {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .twobuttons {
@@ -114,6 +126,10 @@ input::-webkit-inner-spin-button {
     background-color: rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 7px 20px 2px rgba(0,0,0,0.25);
     box-shadow: 0 7px 20px 2px rgba(0,0,0,0.25);
+}
+
+button.dropbtn {
+    font-family: "Montserrat", sans-serif;
 }
 
 .dropdown-content {
