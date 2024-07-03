@@ -6,7 +6,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-image: url(/imgs/darkmode_bg.jpg);
+    background-image: url(imgs/darkmode_bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
