@@ -37,5 +37,5 @@ function setTheme(themeIndex) {
 }
 
 function applyTheme(themeCSS) {
-  style.href = `/stylesheets/${themeCSS}`;
+  style.href = `stylesheets/${themeCSS}`;
 }
