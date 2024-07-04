@@ -89,3 +89,18 @@ function keyIsNotBackSpace(key) {
 
   return !result;
 }
+
+inputDec.addEventListener("input", (event) => {
+  filterDec(event);
+  calcWhenDecInput();
+});
+
+inputBin.addEventListener("input", (event) => {
+  filterBin(event);
+  calcWhenBinInput();
+});
+
+inputHex.addEventListener("input", (event) => {
+  filterHex(event);
+  calcWhenHexInput();
+});
