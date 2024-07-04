@@ -16,6 +16,10 @@
     overflow: hidden;
 }
 
+.dropdown-content a {
+    cursor: pointer;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
