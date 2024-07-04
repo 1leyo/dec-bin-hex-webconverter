@@ -12,4 +12,4 @@ This is also my first project using JS in combination with HTML and CSS.
 - responsive layout with better view on mobile devices
 
 # Known Issues
-- background images not properly displaying or not displaying at all
+*there are currently no known issues*
