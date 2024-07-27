@@ -2,6 +2,9 @@ const inputDec = document.getElementById("dec");
 const inputBin = document.getElementById("bin");
 const inputHex = document.getElementById("hex");
 
+const btnCalculate = document.getElementById("btn-calc");
+const btnClear = document.getElementById("btn-clear");
+
 function calculate() {
   if (inputDec.value === 0 && inputHex.value === 0 && inputBin.value === 0) {
     clearInputs();
@@ -104,3 +107,6 @@ inputHex.addEventListener("input", (event) => {
   filterHex(event);
   calcWhenHexInput();
 });
+
+btnCalculate.addEventListener("click", () => calculate())
+btnClear.addEventListener("click", () => clearInputs())
