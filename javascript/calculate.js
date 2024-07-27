@@ -73,7 +73,7 @@ function filterBin(event) {
   const key = event.key;
   const validCharacters = "10";
   const isNotBackspace = keyIsNotBackSpace(key);
-  if (!validCharacters.includes(key) && isNotBackspace) {
+   if (!validCharacters.includes(key) && isNotBackspace) {
     event.preventDefault();
   }
 }
@@ -93,17 +93,17 @@ function keyIsNotBackSpace(key) {
   return !result;
 }
 
-inputDec.addEventListener("input", (event) => {
+inputDec.addEventListener("keydown", (event) => {
   filterDec(event);
   calcWhenDecInput();
 });
 
-inputBin.addEventListener("input", (event) => {
+inputBin.addEventListener("keydown", (event) => {
   filterBin(event);
   calcWhenBinInput();
 });
 
-inputHex.addEventListener("input", (event) => {
+inputHex.addEventListener("keydown", (event) => {
   filterHex(event);
   calcWhenHexInput();
 });
