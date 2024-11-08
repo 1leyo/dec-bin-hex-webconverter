@@ -93,20 +93,14 @@ function keyIsNotBackSpace(key) {
   return !result;
 }
 
-inputDec.addEventListener("keydown", (event) => {
-  filterDec(event);
-  calcWhenDecInput();
-});
+inputDec.addEventListener("keydown", (event) => filterDec(event));
+inputBin.addEventListener("keydown", (event) => filterBin(event));
+inputHex.addEventListener("keydown", (event) => filterHex(event));
 
-inputBin.addEventListener("keydown", (event) => {
-  filterBin(event);
-  calcWhenBinInput();
-});
+inputDec.addEventListener("input", () => calcWhenDecInput());
+inputBin.addEventListener("input", () => calcWhenBinInput());
+inputHex.addEventListener("input", () => calcWhenHexInput());
 
-inputHex.addEventListener("keydown", (event) => {
-  filterHex(event);
-  calcWhenHexInput();
-});
 
 btnCalculate.addEventListener("click", () => calculate())
 btnClear.addEventListener("click", () => clearInputs())
